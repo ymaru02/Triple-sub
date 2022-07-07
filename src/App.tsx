@@ -11,7 +11,8 @@ const Container = styled.div`
 `
 
 const Inner = styled.div`
-  margin: 0 10%;
+  margin: 0 auto;
+  width: 1040px;
   height: 100%;
 `
 
