@@ -36,7 +36,7 @@ const metricList = [
   },
 ]
 
-export default function ContentMetrics() {
+export default function Metrics() {
   return (
     <MetricsContainer>
       {metricList.map((content) => {

@@ -1,7 +1,7 @@
 import styled from 'styled-components'
 
 import ContentImg from './components/ContentImg'
-import ContentMetrics from './components/ContentMetrics'
+import Metrics from './components/Metrics'
 
 const Container = styled.div`
   position: relative;
@@ -19,7 +19,7 @@ function App() {
     <Container>
       <Inner>
         <ContentImg />
-        <ContentMetrics />
+        <Metrics />
       </Inner>
     </Container>
   )
