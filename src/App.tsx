@@ -1,5 +1,6 @@
 import styled from 'styled-components'
 
+import Awards from './components/Awards'
 import ContentImg from './components/ContentImg'
 import Metrics from './components/Metrics'
 
@@ -20,6 +21,7 @@ function App() {
       <Inner>
         <ContentImg />
         <Metrics />
+        <Awards />
       </Inner>
     </Container>
   )
