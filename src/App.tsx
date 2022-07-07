@@ -1,12 +1,12 @@
 import styled from 'styled-components'
 
 import ContentImg from './components/ContentImg'
+import ContentMetrics from './components/ContentMetrics'
 
 const Container = styled.div`
   position: relative;
   width: 100%;
   height: 552px;
-  min-width: 1400px;
 `
 
 const Inner = styled.div`
@@ -19,6 +19,7 @@ function App() {
     <Container>
       <Inner>
         <ContentImg />
+        <ContentMetrics />
       </Inner>
     </Container>
   )
