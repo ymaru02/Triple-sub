@@ -1,10 +1,13 @@
 import styled from 'styled-components'
 
-const MetricsContainer = styled.div`
+import FadeIn from '../styles/FadeIn'
+
+const MetricsContainer = styled(FadeIn)`
   @media screen and (min-width: 1142px) {
     margin-left: 623px;
     padding-top: 150px;
   }
+  animation-delay: 100ms;
 `
 
 const Content = styled.div`

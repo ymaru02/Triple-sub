@@ -2,12 +2,14 @@ import styled from 'styled-components'
 
 import Award1 from '../assets/play-store2x.png'
 import Award2 from '../assets/badge-apple4x.png'
+import FadeIn from '../styles/FadeIn'
 
-const AwardContainer = styled.div`
+const AwardContainer = styled(FadeIn)`
   white-space: nowrap;
   @media screen and (min-width: 1142px) {
     margin: 50px 0px 140px 623px;
   }
+  animation-delay: 200ms;
 `
 
 const AwardContent = styled.div<{ awardImg: string }>`

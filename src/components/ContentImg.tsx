@@ -1,8 +1,9 @@
 import styled from 'styled-components'
 
 import logo from '../assets/triple2x.png'
+import FadeIn from '../styles/FadeIn'
 
-const ContentLogoImg = styled.div`
+const ContentLogoImg = styled(FadeIn)`
   box-sizing: border-box;
   background-image: url(${logo});
   background-repeat: no-repeat;
