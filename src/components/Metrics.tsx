@@ -4,10 +4,9 @@ import FadeIn from '../styles/FadeIn'
 import useCountUp from '../hooks/useCountUp'
 
 const MetricsContainer = styled(FadeIn)`
-  @media screen and (min-width: 1142px) {
-    margin-left: 623px;
-    padding-top: 150px;
-  }
+  margin-left: 623px;
+  padding-top: 150px;
+
   animation-delay: 100ms;
 `
 
@@ -15,11 +14,9 @@ const Content = styled.div`
   color: rgb(58, 58, 58);
   font-family: sans-serif;
 
-  @media screen and (min-width: 1142px) {
-    font-size: 36px;
-    letter-spacing: -1px;
-    margin-bottom: 20px;
-  }
+  font-size: 36px;
+  letter-spacing: -1px;
+  margin-bottom: 20px;
 `
 
 const metricList = [

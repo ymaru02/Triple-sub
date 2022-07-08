@@ -6,9 +6,7 @@ import FadeIn from '../styles/FadeIn'
 
 const AwardContainer = styled(FadeIn)`
   white-space: nowrap;
-  @media screen and (min-width: 1142px) {
-    margin: 50px 0px 140px 623px;
-  }
+  margin: 50px 0px 140px 623px;
   animation-delay: 200ms;
 `
 
@@ -21,14 +19,12 @@ const AwardContent = styled.div<{ awardImg: string }>`
   color: rgba(58, 58, 58, 0.8);
   font-weight: bold;
 
-  @media screen and (min-width: 1142px) {
-    background-size: 54px 54px;
-    height: 54px;
-    padding: 5px 0px 5px 62px;
-    font-size: 14px;
-    line-height: 22px;
-    margin-right: 39px;
-  }
+  background-size: 54px 54px;
+  height: 54px;
+  padding: 5px 0px 5px 62px;
+  font-size: 14px;
+  line-height: 22px;
+  margin-right: 39px;
 `
 
 const awardList = [
