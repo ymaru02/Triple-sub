@@ -1,6 +1,7 @@
 import styled from 'styled-components'
 
 import FadeIn from '../styles/FadeIn'
+import useCountUp from '../hooks/useCountUp'
 
 const MetricsContainer = styled(FadeIn)`
   @media screen and (min-width: 1142px) {
@@ -39,6 +40,15 @@ const metricList = [
   },
 ]
 
+interface MetricProps {
+  count: number
+}
+
+function Metric({ count }: MetricProps) {
+  const countUp = useCountUp(count, 2000)
+  return <span>{countUp}</span>
+}
+
 export default function Metrics() {
   return (
     <MetricsContainer>
@@ -46,7 +56,7 @@ export default function Metrics() {
         return (
           <Content key={content.text}>
             <strong>
-              <span>{content.count}</span>
+              <Metric count={content.count} />
               {content.unit}
             </strong>
             {content.text}
