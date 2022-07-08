@@ -23,19 +23,19 @@ const Content = styled.div`
 
 const metricList = [
   {
-    count: 350,
+    count: 700,
     unit: '만 명',
-    text: '의 사용자',
+    text: '의 여행자',
   },
   {
-    count: 21,
+    count: 100,
     unit: '만 개',
-    text: '의 리뷰',
+    text: '의 여행 리뷰',
   },
   {
-    count: 650,
+    count: 470,
     unit: '만 개',
-    text: '의 저장',
+    text: '의 여행 일정',
   },
 ]
 
