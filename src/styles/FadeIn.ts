@@ -1,17 +1,9 @@
-import styled, { keyframes } from 'styled-components'
+import styled from 'styled-components'
 
-const FadeIn = keyframes`
-  0% {
-    opacity: 0;
-    transform: translateY(15px);
-  }
-  100% {
-    opacity: 1;
-    transform: translateY(0);
-  }
-`
+import { FadeIn, translateY } from '../styles/KeyFrames'
+
 const FadeInContainer = styled.div`
-  animation-name: ${FadeIn};
+  animation-name: ${FadeIn}, ${translateY};
   animation-duration: 700ms;
   animation-timing-function: ease-in-out;
 `
