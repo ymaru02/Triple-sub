@@ -2,15 +2,15 @@ import styled from 'styled-components'
 
 import Award1 from '../assets/play-store2x.png'
 import Award2 from '../assets/badge-apple4x.png'
-import FadeIn from '../styles/FadeIn'
+import { FadeInContainer } from '../styles/Animation'
 
-const AwardContainer = styled(FadeIn)`
+const AwardContainer = styled(FadeInContainer)`
   white-space: nowrap;
   margin: 50px 0px 140px 623px;
   animation-delay: 200ms;
 `
 
-const AwardContent = styled.div<{ awardImg: string }>`
+const AwardContent = styled.li<{ awardImg: string }>`
   display: inline-block;
   font-family: sans-serif;
   background-image: url(${(props) => props.awardImg});
@@ -25,6 +25,7 @@ const AwardContent = styled.div<{ awardImg: string }>`
   font-size: 14px;
   line-height: 22px;
   margin-right: 39px;
+  list-style: none;
 `
 
 const awardList = [
@@ -43,15 +44,17 @@ const awardList = [
 export default function Awards() {
   return (
     <AwardContainer>
-      {awardList.map((award) => {
-        return (
-          <AwardContent key={award.img} awardImg={award.img}>
-            {award.name}
-            <br />
-            {award.text}
-          </AwardContent>
-        )
-      })}
+      <ul>
+        {awardList.map((award) => {
+          return (
+            <AwardContent key={award.img} awardImg={award.img}>
+              {award.name}
+              <br />
+              {award.text}
+            </AwardContent>
+          )
+        })}
+      </ul>
     </AwardContainer>
   )
 }
