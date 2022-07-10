@@ -43,7 +43,7 @@ const awardList = [
 
 export default function Awards() {
   return (
-    <AwardContainer>
+    <AwardContainer y={15}>
       <ul>
         {awardList.map((award) => {
           return (

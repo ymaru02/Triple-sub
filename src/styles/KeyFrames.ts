@@ -1,15 +1,15 @@
 import { keyframes } from 'styled-components'
 
-export const translateY = keyframes`
+export const translateY = (y: number) => keyframes`
   0% {
-    transform: translateY(15px);
+    transform: translateY(${y}px);
   }
   100% {
     transform: translateY(0);
   }
 `
 
-export const FadeIn = keyframes`
+export const opacity = keyframes`
   0% {
     opacity: 0;
   }

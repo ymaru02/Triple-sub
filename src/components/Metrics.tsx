@@ -49,7 +49,7 @@ function Metric({ count }: MetricProps) {
 
 export default function Metrics() {
   return (
-    <MetricsContainer>
+    <MetricsContainer y={15}>
       <ul>
         {metricList.map((content) => {
           return (
