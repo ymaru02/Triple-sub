@@ -21,5 +21,5 @@ const ContentLogoImg = styled(FadeInContainer)`
 `
 
 export default function ContentLogo() {
-  return <ContentLogoImg>2021년 12월 기준</ContentLogoImg>
+  return <ContentLogoImg y={15}>2021년 12월 기준</ContentLogoImg>
 }

@@ -1,7 +1,7 @@
 import styled from 'styled-components'
 
 import Awards from './components/Awards'
-import ContentImg from './components/ContentImg'
+import ContentImg from './components/ContentLogo'
 import Metrics from './components/Metrics'
 
 const Container = styled.main`
