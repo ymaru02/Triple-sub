@@ -1,11 +1,11 @@
 import styled from 'styled-components'
 
-import logo from '../assets/triple2x.png'
 import { FadeInContainer } from '../styles/Animation'
+import { ContentLogoData } from '../contents/contents'
 
-const ContentLogoImg = styled(FadeInContainer)`
+const ContentLogoImg = styled(FadeInContainer)<{ contentLogo: string }>`
   box-sizing: border-box;
-  background-image: url(${logo});
+  background-image: url(${(props) => props.contentLogo});
   background-repeat: no-repeat;
   text-align: center;
   font-family: sans-serif;
@@ -21,5 +21,9 @@ const ContentLogoImg = styled(FadeInContainer)`
 `
 
 export default function ContentLogo() {
-  return <ContentLogoImg y={15}>2021년 12월 기준</ContentLogoImg>
+  return (
+    <ContentLogoImg contentLogo={ContentLogoData.img} y={15}>
+      {ContentLogoData.date}
+    </ContentLogoImg>
+  )
 }

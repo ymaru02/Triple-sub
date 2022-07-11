@@ -2,6 +2,7 @@ import styled from 'styled-components'
 
 import { FadeInContainer } from '../styles/Animation'
 import useCountUp from '../hooks/useCountUp'
+import { metricList } from '../contents/contents'
 
 const MetricsContainer = styled(FadeInContainer)`
   margin-left: 623px;
@@ -19,24 +20,6 @@ const Content = styled.li`
   margin-bottom: 20px;
   list-style: none;
 `
-
-const metricList = [
-  {
-    count: 700,
-    unit: '만 명',
-    text: '의 여행자',
-  },
-  {
-    count: 100,
-    unit: '만 개',
-    text: '의 여행 리뷰',
-  },
-  {
-    count: 470,
-    unit: '만 개',
-    text: '의 여행 일정',
-  },
-]
 
 interface MetricProps {
   count: number

@@ -1,8 +1,7 @@
 import styled from 'styled-components'
 
-import Award1 from '../assets/play-store2x.png'
-import Award2 from '../assets/badge-apple4x.png'
 import { FadeInContainer } from '../styles/Animation'
+import { awardList } from '../contents/contents'
 
 const AwardContainer = styled(FadeInContainer)`
   white-space: nowrap;
@@ -27,19 +26,6 @@ const AwardContent = styled.li<{ awardImg: string }>`
   margin-right: 39px;
   list-style: none;
 `
-
-const awardList = [
-  {
-    img: Award1,
-    name: '2018 구글 플레이스토어',
-    text: '올해의 앱 최우수상 수상',
-  },
-  {
-    img: Award2,
-    name: '2018 애플 앱스토어',
-    text: '오늘의 여행앱 선정',
-  },
-]
 
 export default function Awards() {
   return (
