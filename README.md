@@ -42,6 +42,8 @@ npm start
  ┃ ┣ 📜Awards.tsx				---> 수상내역 파일
  ┃ ┣ 📜ContentImg.tsx			---> 서비스 로고 파일
  ┃ ┗ 📜Metrics.tsx				---> 통계 텍스트 파일
+ ┣ 📂contents
+ ┃ ┗ 📜contents.ts				---> 내용 관리 파일
  ┣ 📂hooks
  ┃ ┗ 📜useCountUp.tsx			---> 숫자 올림 제어 파일
  ┣ 📂styles
@@ -109,3 +111,12 @@ export const opacity = keyframes`
 
 - 개별적 keyframes을 이용하여 Animation 재생
 
+
+
+### 상태 관리
+
+전역 상태 라이브러리를 꼭 써야하는지 한번 생각해 보았고 현재 상태에 대해 전역 상태로 관리 하기 보단 지역 상태로 관리 하기 용이하다 생각했습니다.
+
+- 다수의 컴포넌트간에 상태 의존성 현재 낮습니다.
+- 다른 컴포넌트들과 데이터를 공유하지 않는다
+- 프로젝트 전체에 영향을 끼치는 않는 상태
